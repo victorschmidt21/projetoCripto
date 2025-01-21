@@ -1,0 +1,160 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+}
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.name {
+  text-decoration: none;
+  color: #fff;
+}
+.button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.input {
+  height: 2rem;
+  width: 100%;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.3rem;
+  border: 0;
+  outline: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+table caption {
+  font-size: 1rem;
+  margin: 0.5em 0.75em;
+}
+th {
+  color: #fff;
+}
+.tr {
+  background-color: #471a56;
+}
+td:first-child,
+th:first-child {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+td:last-child,
+th:last-child {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+table th,
+table td {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.tdLabel {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.tdProfit {
+  color: #12f98a;
+}
+
+.tdLoss {
+  color: #f91257;
+}
+
+.buttonMais {
+  margin: 1rem 0;
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.load {
+  margin: 0.6rem 0;
+  color: #ddd;
+  font-size: 1rem;
+}
+
+.img {
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: all 1s;
+}
+
+.img:hover {
+  transform: scale(1.2);
+  z-index: 99;
+}
+
+.cripto {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .cripto img {
+    margin-left: 1rem;
+  }
+
+  table {
+    border: 0;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    padding: 0;
+  }
+  .tr {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  table td {
+    border-bottom: 1px solid rgba(221, 221, 221, 0.17);
+    display: block;
+    text-align: right;
+    font-size: 0.6rem;
+  }
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+  td:first-child,
+  th:first-child {
+    border-radius: 0;
+  }
+
+  td:last-child,
+  th:last-child {
+    border-radius: 0;
+  }
+}
