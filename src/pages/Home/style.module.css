@@ -138,6 +138,12 @@ table td {
     display: block;
     text-align: right;
     font-size: 0.6rem;
+    justify-content: space-between;
+  }
+
+  .cripto {
+    display: flex;
+    justify-content: end;
   }
   table td::before {
     content: attr(data-label);
